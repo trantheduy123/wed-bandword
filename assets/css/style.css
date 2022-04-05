@@ -113,7 +113,7 @@ html{
     list-style-type: none;
 }
 
-#nav > li > a  {
+#nav  li  a  {
     #slider.text-transform: uppercase;
     color: #fff}
 
@@ -145,6 +145,7 @@ html{
     color:#fff ;
     font-size: 12px;
     line-height: 46px;
+    
 }
 
 #nav > li:hover .subnav{
