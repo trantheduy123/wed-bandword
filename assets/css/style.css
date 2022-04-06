@@ -4,6 +4,8 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
+ 
+
 
 html{
     scroll-behavior: smooth;
@@ -29,8 +31,11 @@ html{
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
-    border:none
-
+    border:none;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    
 }
 .btn:hover{
     color: #000;
@@ -66,13 +71,19 @@ html{
 
 }
 
-.col-full{
+.col-ful{
     width: 100%;
 }
 .mt-8{
     margin-top: 16px  !important;
 }
+.mt-16{
+    margin-top: 16px;
+}
 
+.mt-32{
+    margin-bottom: 32px;
+}
 
 .text-center{
     text-align: center !important;
@@ -95,6 +106,7 @@ html{
     height: 46px;
     background-color: #000;
     z-index: 1;
+   
 
 }
 #nav {
@@ -111,18 +123,25 @@ html{
 }
 #nav, .subnav{
     list-style-type: none;
+    
 }
 
-#nav  li  a  {
-    #slider.text-transform: uppercase;
-    color: #fff}
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
 
-#nav li a {
-    #slider.text-decoration:none;
-    color: #fff;
+
+
+#nav li a   {   
+
+
+    color:#fff ;
     line-height: 46px;
     padding : 0 24px;   
-    display: block;
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -131,15 +150,26 @@ html{
     font-size: 12px;
 }
 
+#header .mobile-menu-btn,
 #header .search-btn{
   float: right;
-  padding: 0 21px;
+  padding: 0 40px;
   cursor: pointer;
 }
 
+#header .mobile-menu-btn:hover,
 #header .search-btn:hover{
-    background-color: #f44336;
+    background-color: #fff;
 }
+#header .mobile-menu-btn:hover{
+    color: #fff;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .menu-icon,
 
 #header .ti-search {
     color:#fff ;
@@ -148,8 +178,8 @@ html{
     
 }
 
-#nav > li:hover .subnav{
-    display: block;
+#nav  li:hover .subnav  {
+    display: block ;
 }
 
 #nav .subnav li:hover a, 
@@ -168,6 +198,7 @@ html{
     
 }
 #nav .subnav a{
+    
     padding: 0 12px;
     color: #000;
     line-height: 28px;
@@ -179,7 +210,7 @@ html{
 {   position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/img/slider1/chicago.jpg') top center / cover no-repeat;
+    background: url('../img/slider1/chicago.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content{
@@ -199,6 +230,7 @@ margin-top: 25px;
 }
 #slider .text-description{
     font-size: 15px;
+    text-shadow: 0 0 1px black;
 }
 
 
@@ -206,9 +238,12 @@ margin-top: 25px;
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 40px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
@@ -370,6 +405,7 @@ line-height:1.4 ;
     font-size: 30px;
     color: #fff;
     
+    
 }
 .ti-bag{
     margin-right: 16px;
@@ -457,6 +493,14 @@ label.modal-label {
 /* Contact form */
 .contact-content{
     margin-top: 48px;
+}
+.contact-info a{
+    color: #00e ;
+    opacity: 0.8;
+}
+
+.contact-info a:hover{
+    opacity: 1;
 }
 
 .contact-info{
